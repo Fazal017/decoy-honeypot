@@ -6,4 +6,6 @@ logs/honeypot.jsonl
 logs/honeypot.db
 report.html
 summary.json
+campaign_report.html
+campaigns.json
 .DS_Store

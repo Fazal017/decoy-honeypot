@@ -3,8 +3,9 @@
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Dependencies](https://img.shields.io/badge/dependencies-stdlib%20only-brightgreen)
-![Tests](https://img.shields.io/badge/tests-9%20passing-brightgreen)
+![Tests](https://img.shields.io/badge/tests-27%20passing-brightgreen)
 ![MITRE](https://img.shields.io/badge/MITRE-T1110%20%7C%20T1059%20%7C%20T1078-red)
+![Version](https://img.shields.io/badge/version-v2.0%20Decoy%20Fabric-purple)
 
 A **low-interaction SSH honeypot in pure Python (stdlib only)** that safely
 attracts and logs automated SSH attacks in an isolated lab — no real shell,
@@ -14,6 +15,87 @@ commands they run after "login". Then it turns that raw log into a
 SOC-style attacker report.
 
 Built for blue-team learning, SOC interview prep, and threat-intel practice.
+
+## v2.0 — Advanced: Adaptive Deception Fabric
+
+> **v1 is a tutorial honeypot. v2 is not.** v1 pretends to be one fixed
+> Ubuntu box and logs what happened. v2 — the **Decoy Fabric** — watches
+> *how* an attacker behaves, changes what it pretends to be in response,
+> plants fake secrets to learn what they want to steal, and groups
+> sessions into *campaigns* instead of counting IPs.
+
+Most honeypots answer one question: "who knocked?" Decoy Fabric answers
+three that a static decoy cannot:
+
+1. **What tool is this?** — `src/fingerprint.py` classifies a session
+   from tempo, password order, command sequence and breadth: Hydra
+   (fast, sequential dictionary, no commands), manual (slow, typos,
+   exploratory `ls`/`cat`), scanner (no login), sqlmap-like (SQL in
+   the stream), botnet (the same password list from ≥3 IPs).
+2. **What should the decoy become?** — `src/adaptive.py` +
+   `config/adaptive_policy.json` change the deception per fingerprint:
+   Hydra gets an old Debian banner, a 2 s tarpit delay and a fake
+   account lockout after 3 attempts; a manual actor gets a rich
+   filesystem with canary files; a scanner gets a fake open-ports
+   list instead of a shell. Policy is config-driven — edit the JSON,
+   restart, no code change.
+3. **Is this one actor or many?** — `src/clustering.py` groups
+   sessions by password-list Jaccard similarity + command-set
+   similarity + fingerprint, so a botnet across five IPs shows up as
+   **one campaign**, not five unrelated IPs.
+
+Plus `src/canary.py`: fake AWS keys, database passwords, a fake
+private key and fake documents planted in the fake filesystem (and
+in HTTP HTML comments). When an attacker `cat`s one, a HIGH-severity
+`canary_accessed` event is logged — that is exfiltration detection,
+not just login logging. All canary values are fake by construction
+(`AKIA…EXAMPLE` pattern), never real credentials.
+
+And `http_honeypot.py`: a second decoy surface — a fake admin login
+page on port 8080 that logs submitted credentials and serves a fake
+dashboard, with canary tokens in its HTML comments.
+
+### v2 campaign result (from `logs/sample_campaign.jsonl` — 12 sessions)
+
+| Campaign | Likely type | Sessions | IPs | Shared passwords |
+|---|---|---|---|---|
+| CAMP-01 | botnet (conf 0.90) | 10 | 5 — 203.0.113.11–15 | 123456, password, admin, root, qwerty |
+| CAMP-02 | manual (conf 0.85) | 2 | 1 — 198.51.100.77 | Winter2026! (unique, not in the botnet list) |
+
+The two campaigns are separated by the clustering, not by IP count:
+the botnet sessions share an identical 5-password list (Jaccard 1.0)
+and no commands; the manual sessions share exploratory commands,
+a typo (`lss`), slow tempo, and 2 canary accesses.
+
+```bash
+# v2 demo — no internet needed
+python3 honeypot_v2.py --adaptive          # terminal 1, 127.0.0.1:2222
+python3 http_honeypot.py                   # terminal 1b, 127.0.0.1:8080
+python3 simulate_attack.py                 # terminal 2
+python3 analyze_v2.py --log logs/sample_campaign.jsonl \
+    --output campaign_report.html --json campaigns.json
+# [+] Sessions: 12 | Campaigns: 2 ({'botnet': 1, 'manual': 1}) |
+#     Canary accesses: 2
+```
+
+**Note — the lockout *is* the demo.** `simulate_attack.py` fires 15
+fast dictionary guesses from one IP, so v2 fingerprints it as Hydra
+after 3 attempts and fake-locks the account: in a live run that is
+15 login attempts logged, 13 `lockout` events, and only the first 2
+sessions reaching the shell. To demo the full fake shell instead,
+run `python3 honeypot_v2.py --no-adaptive` (v1 behaviour), or restart
+the honeypot to clear its per-IP memory.
+
+| Component | File | Role |
+|---|---|---|
+| v2 SSH honeypot | `honeypot_v2.py` | Adaptive SSH decoy, per-IP memory, tarpit + lockout |
+| HTTP honeypot | `http_honeypot.py` | Fake admin login on 8080, credential logging, canaries in HTML comments |
+| Fingerprinting | `src/fingerprint.py` | Hydra / manual / scanner / sqlmap / botnet classification |
+| Adaptive policy | `src/adaptive.py` + `config/adaptive_policy.json` | Config-driven banner / delay / lockout / filesystem per fingerprint |
+| Canaries | `src/canary.py` | Fake AWS keys, DB passwords, private key, documents |
+| Clustering | `src/clustering.py` | Campaign grouping by password + command similarity |
+| v2 analyzer | `analyze_v2.py` | Campaign report (`campaign_report.html` + `campaigns.json`) |
+| v1 (kept) | `honeypot.py`, `analyze.py` | Original static honeypot — still works unchanged |
 
 ## What it is
 
@@ -74,7 +156,7 @@ honeypot is the cheapest way to study that traffic safely:
 | Logger | `src/logger.py` | JSONL + SQLite writes, per-IP stats, MITRE mapping |
 | Analyzer | `analyze.py` | Reads the log, writes `report.html` + `summary.json` |
 | Simulator | `simulate_attack.py` | Safe localhost brute-force demo (no internet needed) |
-| Tests | `tests/test_honeypot.py` | `unittest`, 9 tests |
+| Tests | `tests/test_honeypot.py` + `tests/test_v2.py` | `unittest`, 27 tests (9 v1 + 18 v2) |
 
 ## Install
 
@@ -189,7 +271,7 @@ try to download a payload. None of it ever touches a real system here.
 
 ```bash
 python3 -m unittest discover -s tests -v
-# Ran 9 tests in ~1s — OK
+# Ran 27 tests in ~2s — OK (9 v1 + 18 v2)
 ```
 
 Tests cover: the fake SSH banner, canned shell output, no shell escape
@@ -200,7 +282,8 @@ rendering (including "no `<script>` in the report").
 
 ## Roadmap
 
-- [ ] HTTP honeypot (fake login page / WordPress admin) alongside SSH
+- [x] HTTP honeypot (fake login page / WordPress admin) alongside SSH — done in v2.0
+- [x] Adaptive deception + campaign clustering — done in v2.0
 - [ ] Geo-IP enrichment of source IPs (offline MaxMind DB)
 - [ ] Telnet / FTP low-interaction modules
 - [ ] Live dashboard + alerting (e.g. webhook on >10 attempts from one IP)
